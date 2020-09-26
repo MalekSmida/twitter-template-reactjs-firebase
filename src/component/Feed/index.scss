@@ -1,2 +1,17 @@
 .feed {
+  flex: 0.4;
+  border-right: 1px solid var(--twitter-background);
+
+  // scroll
+  min-width: fit-content;
+  overflow-y: scroll;
+
+  &__header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--twitter-background);
+  }
 }

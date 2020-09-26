@@ -1,7 +1,13 @@
 .sidebar {
-  padding: 10px 40px;
+  padding: 10px 20px;
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.3;
+  // min-width: 250px;
+
   &__logo {
-    margin: 0 25px;
+    margin: 20px 0 10px 20px;
+    font-size: 30px !important;
+    color: var(--twitter-color);
   }
 
   .MuiSvgIcon-root {
@@ -10,7 +16,7 @@
 
   &__button {
     margin: 20px 0 0 0 !important;
-    height: 45px !important;
+    height: 50px !important;
     width: 100% !important;
     color: white !important;
     background-color: var(--twitter-color) !important;
