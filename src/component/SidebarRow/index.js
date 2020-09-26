@@ -3,11 +3,17 @@ import React from "react";
 import "./index.scss";
 import AvatarIcon from "@material-ui/core/Avatar";
 
-function SidebarRow({ Icon, title, profilePic }) {
+function SidebarRow({ Icon, title, profilePic, selected }) {
   return (
-    <div className="sidebarRow">
-      {Icon && <Icon />}
-      {profilePic && <AvatarIcon alt="user" src={profilePic} />}
+    <div className={`sidebarRow ${selected && "selected"}`}>
+      {Icon && <Icon className="sidebarRow__icon" />}
+      {profilePic && (
+        <AvatarIcon
+          className="sidebarRow__avatar"
+          alt="user"
+          src={profilePic}
+        />
+      )}
       <h3>{title}</h3>
     </div>
   );

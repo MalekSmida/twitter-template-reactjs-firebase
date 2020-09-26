@@ -13,8 +13,8 @@ import MoreIcon from "@material-ui/icons/MoreOutlined";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <SidebarRow Icon={TwitterIcon} />
-      <SidebarRow Icon={HomeIcon} title="Home" />
+      <TwitterIcon style={{ color: "#1DA1F2" }} className="sidebar__logo" />
+      <SidebarRow selected Icon={HomeIcon} title="Home" />
       <SidebarRow Icon={ExploreIcon} title="Explore" />
       <SidebarRow Icon={NotificationsIcon} title="Notifications" />
       <SidebarRow Icon={MessagesIcon} title="Messages" />
