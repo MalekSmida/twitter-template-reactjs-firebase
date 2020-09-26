@@ -1,10 +1,14 @@
+import { Avatar } from "@material-ui/core";
 import React from "react";
-import "/index.scss";
+import "./index.scss";
+import AvatarIcon from "@material-ui/core/Avatar";
 
-function SidebarRow() {
+function SidebarRow({ Icon, title, profilePic }) {
   return (
     <div className="sidebarRow">
-      <h1>SidebarRow</h1>
+      {Icon && <Icon />}
+      {profilePic && <AvatarIcon alt="user" src={profilePic} />}
+      <h3>{title}</h3>
     </div>
   );
 }
