@@ -5,7 +5,7 @@ import AvatarIcon from "@material-ui/core/Avatar";
 
 function SidebarRow({ Icon, title, profilePic, selected }) {
   return (
-    <div className={`sidebarRow ${selected && "selected"}`}>
+    <div className={`sidebarRow ${selected && "sidebarRow--selected"}`}>
       {Icon && <Icon className="sidebarRow__icon" />}
       {profilePic && (
         <AvatarIcon

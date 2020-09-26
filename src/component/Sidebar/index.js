@@ -9,11 +9,15 @@ import MessagesIcon from "@material-ui/icons/MailOutlineRounded";
 import BookmarksIcon from "@material-ui/icons/BookmarkBorderRounded";
 import ListsIcon from "@material-ui/icons/ListAlt";
 import MoreIcon from "@material-ui/icons/MoreOutlined";
+import Button from "@material-ui/core/Button";
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <TwitterIcon style={{ color: "#1DA1F2" }} className="sidebar__logo" />
+      <TwitterIcon
+        style={{ color: "var(--twitter-color)" }}
+        className="sidebar__logo"
+      />
       <SidebarRow selected Icon={HomeIcon} title="Home" />
       <SidebarRow Icon={ExploreIcon} title="Explore" />
       <SidebarRow Icon={NotificationsIcon} title="Notifications" />
@@ -25,7 +29,7 @@ function Sidebar() {
         title="Profile"
       />
       <SidebarRow Icon={MoreIcon} title="More" />
-      <button>Tweet</button>
+      <Button className="sidebar__button">Tweet</Button>
     </div>
   );
 }

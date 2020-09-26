@@ -1,27 +1,28 @@
 .sidebarRow {
   display: flex;
   align-items: center;
-  padding: 10px 70px;
   cursor: pointer;
+  margin: 10px 0;
+  padding: 10px 25px;
 
-  &.selected {
-    color: #1da1f2;
+  &--selected {
+    color: var(--twitter-color);
   }
 
   &:hover {
-    background-color: rgb(228, 228, 228);
+    background-color: #e8f5fe;
+    color: var(--twitter-color);
+    border-radius: 999px;
+    transition: color 100ms ease-out;
   }
 
   h3 {
-    font-size: large;
+    font-size: medium;
     margin: 0 0 0 20px;
   }
 
-  &__icon {
-  }
-
   &__avatar {
-    height: 31px !important;
-    width: 31px !important;
+    height: 23px !important;
+    width: 23px !important;
   }
 }
