@@ -6,6 +6,13 @@
   min-width: fit-content;
   overflow-y: scroll;
 
+  // hide scroll bar
+  -ms-overflow-style: none; //IE && Edge
+  scrollbar-width: none; //FireFox
+  &::-webkit-scrollbar {
+    display: none; // Chrome && Safari && Opera
+  }
+
   &__header {
     position: sticky;
     top: 0;
