@@ -1,2 +1,49 @@
 .post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background);
+  padding: 0 0 10px 0;
+
+  &__avatar {
+    padding: 20px;
+  }
+  &__body {
+    flex: 1;
+    padding: 10px;
+    img {
+      border-radius: 15px;
+      width: 100%;
+    }
+
+    &__badge {
+      font-size: 14px !important;
+      color: var(--twitter-color);
+      margin: 0 5px;
+    }
+    &__headerSpecial {
+      font-size: 12px;
+      font-weight: 600;
+      color: gray;
+    }
+    &__headerDescription {
+      margin: 0 0 10px 0;
+      font-size: 15px;
+    }
+    &__headerText {
+      h3 {
+        font-size: 15px;
+        margin: 0 0 5px 0;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 60px 0 0;
+
+    .MuiSvgIcon-root {
+      color: gray;
+    }
+  }
 }

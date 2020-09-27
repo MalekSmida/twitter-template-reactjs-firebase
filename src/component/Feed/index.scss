@@ -1,9 +1,9 @@
 .feed {
-  flex: 0.4;
+  flex: 0.5;
   border-right: 1px solid var(--twitter-background);
 
   // scroll
-  min-width: fit-content;
+  // min-width: fit-content;
   overflow-y: scroll;
 
   // hide scroll bar
