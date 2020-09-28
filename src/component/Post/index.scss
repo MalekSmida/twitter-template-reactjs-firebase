@@ -18,12 +18,13 @@
     &__badge {
       font-size: 14px !important;
       color: var(--twitter-color);
-      margin: 0 5px;
+      margin: 0 5px 0 0;
     }
     &__headerSpecial {
       font-size: 12px;
       font-weight: 600;
       color: gray;
+      margin: 0 0 0 5px;
     }
     &__headerDescription {
       margin: 0 0 10px 0;

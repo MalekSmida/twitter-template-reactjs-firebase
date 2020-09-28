@@ -27,8 +27,9 @@ function Post({
             <h3>
               {displayName}
               <span className="post__body__headerSpecial">
-                <VerifiedUserIcon className="post__body__badge" />
-                {username}
+                {verified && <VerifiedUserIcon className="post__body__badge" />}
+                {username} {" - "}
+                {new Date(timestamp?.toDate()).toUTCString()}
               </span>
             </h3>
           </div>
