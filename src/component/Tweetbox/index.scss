@@ -10,25 +10,33 @@
   &__input {
     display: flex;
 
-    input:first-of-type {
-      border: 1px solid var(--twitter-background);
-      border-radius: 999px 0 0 999px;
+    input {
+      border: none;
       outline-width: 0;
       margin: 0 0 0 15px;
       font-size: 20px;
       flex: 1;
       padding: 10px 10px 10px 30px;
     }
+    // input:first-of-type {
+    //   border: 1px solid var(--twitter-background);
+    //   border-radius: 999px 0 0 999px;
+    //   outline-width: 0;
+    //   margin: 0 0 0 15px;
+    //   font-size: 20px;
+    //   flex: 1;
+    //   padding: 10px 10px 10px 30px;
+    // }
 
-    input:last-of-type {
-      border: 1px solid var(--twitter-background);
-      border-radius: 0 999px 999px 0;
-      outline-width: 0;
-      margin: 0 0 0 5px;
-      font-size: 20px;
-      flex: 1;
-      padding: 10px;
-    }
+    // input:last-of-type {
+    //   border: 1px solid var(--twitter-background);
+    //   border-radius: 0 999px 999px 0;
+    //   outline-width: 0;
+    //   margin: 0 0 0 5px;
+    //   font-size: 20px;
+    //   flex: 1;
+    //   padding: 10px;
+    // }
   }
 
   &__imageInput {
