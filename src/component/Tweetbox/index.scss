@@ -10,10 +10,21 @@
   &__input {
     display: flex;
 
-    input {
-      border: none;
+    input:first-of-type {
+      border: 1px solid var(--twitter-background);
+      border-radius: 999px 0 0 999px;
       outline-width: 0;
       margin: 0 0 0 15px;
+      font-size: 20px;
+      flex: 1;
+      padding: 10px 10px 10px 30px;
+    }
+
+    input:last-of-type {
+      border: 1px solid var(--twitter-background);
+      border-radius: 0 999px 999px 0;
+      outline-width: 0;
+      margin: 0 0 0 5px;
       font-size: 20px;
       flex: 1;
       padding: 10px;
@@ -32,7 +43,7 @@
   &__button {
     height: 40px !important;
     width: 80px !important;
-    margin-left: auto !important; //push button to the right
+    margin: 10px 0 0 auto !important; //push button to the right
     color: white !important;
     background-color: var(--twitter-color) !important;
     border-radius: 999px !important;
