@@ -1,8 +1,19 @@
-import { Avatar } from "@material-ui/core";
 import React from "react";
-import "./index.scss";
+
+// node modules
 import AvatarIcon from "@material-ui/core/Avatar";
 
+// local files
+import "./index.scss";
+
+/**
+ * SidebarRow present each row of the sidebar
+ *
+ * @param {Object} Icon => Material-ui icon
+ * @param {String} title => title of the sidebarRow
+ * @param {String} Icon
+ * @param {Boolean} selected
+ */
 function SidebarRow({ Icon, title, profilePic, selected }) {
   return (
     <div className={`sidebarRow ${selected && "sidebarRow--selected"}`}>

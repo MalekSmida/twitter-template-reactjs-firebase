@@ -1,8 +1,8 @@
 import React from "react";
+
+// local files
 import "./App.scss";
-import Sidebar from "./component/Sidebar";
-import Feed from "./component/Feed";
-import Widgets from "./component/Widgets";
+import { Sidebar, Feed, Widgets } from "./component";
 
 function App() {
   return (

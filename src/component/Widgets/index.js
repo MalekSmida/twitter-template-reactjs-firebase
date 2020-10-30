@@ -1,12 +1,19 @@
 import React from "react";
+
+// node modules
 import {
-  TwitterTimelineEmbed,
+  // TwitterTimelineEmbed,
   TwitterShareButton,
   TwitterTweetEmbed,
 } from "react-twitter-embed";
 import SearchIcon from "@material-ui/icons/Search";
+
+// local files
 import "./index.scss";
 
+/**
+ * Twitter widget that appear on the right
+ */
 function Widgets() {
   return (
     <div className="widgets">

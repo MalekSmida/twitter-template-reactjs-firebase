@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
-import TweetBox from "../Tweetbox";
-import Post from "../Post";
-import "./index.scss";
-import db from "../../firebase";
+
+// node modules
 import FlipMove from "react-flip-move";
 
+// local files
+import { Tweetbox, Post } from "../../component";
+import "./index.scss";
+import db from "../../service/firebase";
+
+/**
+ * application feed
+ */
 function Feed() {
   const [posts, setPosts] = useState([]);
 
+  // fetch data from firestore
   useEffect(() => {
     db.collection("posts")
       .orderBy("timestamp", "desc")
@@ -20,12 +27,12 @@ function Feed() {
       <div className="feed__header">
         <h2>Home</h2>
       </div>
-      <TweetBox />
+      <Tweetbox />
 
       <FlipMove>
-        {posts.map((post) => (
+        {posts.map((post, index) => (
           <Post
-            key={post.id} //best practice: use doc id from firebase
+            key={index} //best practice: use doc id from firebase
             verified={post.verified}
             username={post.username}
             displayName={post.displayName}

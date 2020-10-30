@@ -1,6 +1,6 @@
 import React from "react";
-import "./index.scss";
-import SidebarRow from "../SidebarRow";
+
+// node modules
 import HomeIcon from "@material-ui/icons/Home";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import ExploreIcon from "@material-ui/icons/FullscreenExit";
@@ -11,6 +11,13 @@ import ListsIcon from "@material-ui/icons/ListAlt";
 import MoreIcon from "@material-ui/icons/MoreOutlined";
 import Button from "@material-ui/core/Button";
 
+// local files
+import SidebarRow from "../SidebarRow";
+import "./index.scss";
+
+/**
+ * Sidebar component that displays menu icons
+ */
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -22,7 +29,7 @@ function Sidebar() {
       <SidebarRow Icon={BookmarksIcon} title="Bookmarks" />
       <SidebarRow Icon={ListsIcon} title="Lists" />
       <SidebarRow
-        profilePic="https://scontent.ftun6-1.fna.fbcdn.net/v/t1.0-9/83020011_725652291572674_1450846223241052160_o.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=n2Zeto3D8qkAX-9jz7Q&_nc_ht=scontent.ftun6-1.fna&oh=df464cdbcb44b26d2924642c597b63c8&oe=5F8D5D6B"
+        profilePic="https://i.ibb.co/sH5B3n0/VAPORGRAM1589311597915.jpg"
         title="Profile"
       />
       <SidebarRow Icon={MoreIcon} title="More" />
