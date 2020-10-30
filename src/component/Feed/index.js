@@ -16,11 +16,16 @@ function Feed() {
 
   // fetch data from firestore
   useEffect(() => {
-    db.collection("posts")
+    let getData = db
+      .collection("posts")
       .orderBy("timestamp", "desc")
       .onSnapshot((snapshot) => {
         setPosts(snapshot.docs.map((doc) => doc.data()));
       });
+
+    return () => {
+      getData(); // Stop listening to changes
+    };
   }, []);
   return (
     <div className="feed">
