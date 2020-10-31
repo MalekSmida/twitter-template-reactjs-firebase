@@ -15,8 +15,16 @@ Click image for live preview
 3- Create project in firebase: https://console.firebase.google.com/ <br />
 4- Add firebase project configuration to `.env` <br />
 5- Create database in Cloud Firestore, create collection `posts` and add documents that contains:
-```json
-{ avatar: string , displayName: string, image: string, text: string, timestamp: timestamp, username: string, verified: boolean }
+```yaml
+{
+   "avatar": "",            # {string}    => avatar image as cdn
+   "displayName": "",       # {string}    => account name
+   "image": "",             # {string}    => post image as cdn
+   "text": "",              # {string}    => post decription
+   "timestamp": "",         # {timestamp} => post creation date
+   "username": "",          # {string}    => acount user name
+   "verified": ""           # {boolean}   => is the account verified!
+}
 ```
 => those are the posts that will appear in the feed! <br />
 6- Run the project `$ npm start` <br /><br />
