@@ -13,8 +13,13 @@ Click image for live preview
 1- Download or clone the project <br />
 2- Run `$ npm install` to add the dependencies <br />
 3- Create project in firebase: https://console.firebase.google.com/ <br />
-4- Change `<<data>>` in .env.example with your configuration from firebase project <br />
-5- Run the project `$ npm start` <br /><br />
+4- Add firebase project configuration to `.env` <br />
+5- Create database in Cloud Firestore, create collection `posts` and add documents that contains:
+```json
+{ avatar: string , displayName: string, image: string, text: string, timestamp: timestamp, username: string, verified: boolean }
+```
+=> those are the posts that will appear in the feed! <br />
+6- Run the project `$ npm start` <br /><br />
 
 To know more about Firebase check: https://firebase.google.com/
 
